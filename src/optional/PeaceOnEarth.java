@@ -21,7 +21,12 @@ public class PeaceOnEarth {
 		truth.add('k');
 
 		/* TODO: Remove the hash symbols and print out the truth. */
-		
-		
+		Character ch = '#';
+		while (truth.contains(ch)) {
+			truth.remove(ch);
+		}
+		for (int i = 0; i < truth.size(); i++) {
+			System.out.print(truth.get(i));
+		}
 	}
 }
